@@ -10,7 +10,7 @@ maven 'Maven' // Ensure this matches the name configured in Jenkins
 stages {
 stage('Checkout') {
 steps {
-git branch: 'master', url 'https://github.com/adithyaS360/labint.git
+git branch: 'master', url 'https://github.com/adithyaS360/labint.git'
 }
 }
 stage('Build') {
