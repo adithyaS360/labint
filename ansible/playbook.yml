@@ -4,10 +4,11 @@
   become: yes
 
   tasks:
+
     - name: Copy WAR file to Tomcat
       copy:
-        src: "/var/snap/jenkins/5019/workspace/target/Labinternal.war"
-        dest: "/opt/tomcat/webapps/Labinternal.war"
+        src: ../target/Labinternal.war
+        dest: /opt/tomcat/webapps/Labinternal.war
         remote_src: no
 
     - name: Restart Tomcat
